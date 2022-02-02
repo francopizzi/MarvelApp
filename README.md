@@ -1,7 +1,7 @@
 # Marvel App 🤖
 
 **My first mobile application fully developed in frontend with React Native and Javascript. The APP take data from an API (https://developer.marvel.com/)**
-
+**This has to type of navigation stack navigation and bottom tab navigation in the character detail**
 *What can you do?*  🤔
 - See the marvel characters.
 - Find a particular character.
