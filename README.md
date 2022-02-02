@@ -11,7 +11,7 @@
 
 ## - Home
 
-![image](https://user-images.githubusercontent.com/72042861/152229531-bb428d5f-f83e-490d-b7aa-f86e636fb11d.png)
+<img src="https://user-images.githubusercontent.com/72042861/152229531-bb428d5f-f83e-490d-b7aa-f86e636fb11d.png" width=''375 , height='660/>
 
 
 ## - Search screen
