@@ -1,6 +1,6 @@
 # Marvel App 🤖
 
-**My first mobile application fully developed in frontend with React Native and Javascript. The APP take data from an API (https://developer.marvel.com/) **
+**My first mobile application fully developed in frontend with React Native and Javascript. The APP take data from an API (https://developer.marvel.com/)**
 
 *What can you do?*  🤔
 - See the marvel characters.
