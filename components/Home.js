@@ -1,7 +1,8 @@
 import apiParams from '../config.js';
 import axios from 'axios';
 import * as React from 'react';
-import { View , ActivityIndicator , FlatList , StyleSheet} from 'react-native';
+import { View , ActivityIndicator , FlatList , StyleSheet , TouchableOpacity} from 'react-native';
+import MaterialCommunityIcons from "react-native-vector-icons/Ionicons";
 import CharacterCard from './CharacterCard';
 import { useState , useEffect } from 'react';
 import { Searchbar , DefaultTheme } from 'react-native-paper';
@@ -11,6 +12,7 @@ export default function Home() {
   const [data, setData] = useState([]);
   const [search, setSearch] = useState('');
   const { ts, apikey, hash, baseURL } = apiParams;
+  const [searchStatus , setSearchStatus] = useState(false);
 
   useEffect(() => {
     axios.get(`${baseURL}/v1/public/characters`, {
@@ -28,6 +30,7 @@ export default function Home() {
   function searchCharacter() {
     if(search) {
       setLoading(true);
+      setSearchStatus(true);
       axios.get(`${baseURL}/v1/public/characters`, {
         params: {
           ts,
@@ -41,6 +44,22 @@ export default function Home() {
         .finally(() => setLoading(false));
     }
   }
+  
+  function handlerGoBack () {
+    setLoading(true)
+    setSearchStatus(false);
+    setSearch('')
+    axios.get(`${baseURL}/v1/public/characters`, {
+      params: {
+        ts,
+        apikey,
+        hash
+      }
+    })
+      .then(response => setData(response.data.data.results))
+      .catch(error => console.error(error))
+      .finally(() => setLoading(false));
+  }
 
   return (
     <View style={styles.bk}>
@@ -48,6 +67,14 @@ export default function Home() {
         ? <ActivityIndicator size="large" color="#00ff00" /> 
         : (
           <View>
+            <View style={styles.containerSearch}>
+            {  searchStatus && <TouchableOpacity
+              //style={styles.button}
+              onPress={handlerGoBack}
+              >
+              <MaterialCommunityIcons name="chevron-back-outline" size={30} color="white" />
+              </TouchableOpacity>
+            }
             <Searchbar
             placeholder="Search for character..."
             onChangeText={value => setSearch(value)}
@@ -57,6 +84,7 @@ export default function Home() {
             theme = {theme}
             style={styles.searchBar}
             />
+            </View>
             <FlatList
             data={data}
             keyExtractor={({ id }) => id.toString()}
@@ -77,10 +105,16 @@ export default function Home() {
 const styles = StyleSheet.create({
   searchBar: {
      margin: 5,
+     flex: 10,
   },
-    bk: {
+  bk: {
        backgroundColor: '#0D60A5',
-    }
+    },
+  containerSearch: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
 })
 
 const theme = {
