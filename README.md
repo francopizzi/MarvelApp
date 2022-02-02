@@ -28,10 +28,10 @@
 
 ## - Detail Commics
 
-
+<div style="flex-direction:'column'>
 <img src="https://user-images.githubusercontent.com/72042861/152229629-0e8d641a-3fff-402d-a537-afc4671a1de1.png" width="300" height="530"/>
 <img src="https://user-images.githubusercontent.com/72042861/152229644-63eaa979-23f1-4599-80ed-45da15a7000b.png" width="300" height="530"/>
-
+</div>
 
 ## - Quick Start
 - Clone this repository.
