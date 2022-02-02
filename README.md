@@ -11,23 +11,25 @@
 
 ## - Home
 
-<img src="https://user-images.githubusercontent.com/72042861/152229531-bb428d5f-f83e-490d-b7aa-f86e636fb11d.png" width="375" height="660"/>
+<img src="https://user-images.githubusercontent.com/72042861/152229531-bb428d5f-f83e-490d-b7aa-f86e636fb11d.png" width="300" height="530"/>
 
 
 ## - Search screen
 
-![image](https://user-images.githubusercontent.com/72042861/152229575-55f59ab4-d4c0-48e3-8f4e-80f40f9f8e34.png)
+<img src="https://user-images.githubusercontent.com/72042861/152229575-55f59ab4-d4c0-48e3-8f4e-80f40f9f8e34.png" width="300" height="530"/>
 
 
 ## - Detail Information
 
-![image](https://user-images.githubusercontent.com/72042861/152229607-2f5c6abe-4672-411b-9af9-91dc5f63c94e.png)
+
+<img src="https://user-images.githubusercontent.com/72042861/152229607-2f5c6abe-4672-411b-9af9-91dc5f63c94e.png" width="300" height="530"/>
 
 
 ## - Detail Commics
 
-![image](https://user-images.githubusercontent.com/72042861/152229629-0e8d641a-3fff-402d-a537-afc4671a1de1.png)
-![image](https://user-images.githubusercontent.com/72042861/152229644-63eaa979-23f1-4599-80ed-45da15a7000b.png)
+
+<img src="https://user-images.githubusercontent.com/72042861/152229629-0e8d641a-3fff-402d-a537-afc4671a1de1.png" width="300" height="530"/>
+<img src="https://user-images.githubusercontent.com/72042861/152229644-63eaa979-23f1-4599-80ed-45da15a7000b.png" width="300" height="530"/>
 
 
 ## - Quick Start
